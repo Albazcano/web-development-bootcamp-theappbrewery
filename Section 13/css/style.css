@@ -1,3 +1,4 @@
+/* 
 .gradient-background {
   background: linear-gradient(300deg, #F5EFFF,#E5D9F2, #CDC1FF,
   #A294F9);
@@ -29,3 +30,46 @@
   border-radius: 50%;
   border: solid purple 3px;
 }
+ */
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: #666777;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #500073;
+}
+
+/* @media (min-width:991px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: #500073;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+  }
+} */
