@@ -1,19 +1,25 @@
-*, 
+*,
 *:after,
 *:before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
-body{
-    font-size: 100%;
-    list-style-type: none;
+body {
+  font-size: 100%;
+  list-style-type: none;
 }
 
 .gradient-background {
-    background: linear-gradient(300deg, #f5efff, #e5d9f2, #cdc1ff, #a294f9);
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
-  }
-  
+  background: linear-gradient(300deg, #f5efff, #e5d9f2, #cdc1ff, #a294f9);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+.profile-img {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    border: solid purple 3px;
+}
