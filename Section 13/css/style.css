@@ -26,6 +26,11 @@ body {
   border: solid purple 3px;
 }
 
+.hero-container {
+  background-image: url(../images/Fondo.jpg);
+}
+
+
 /* Menu animation
 
  Bottom line
