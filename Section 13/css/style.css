@@ -9,6 +9,8 @@
 body {
   font-size: 100%;
   list-style-type: none;
+  scroll-behavior: smooth;
+  max-height: fit-content;
 }
 
 .gradient-background {
@@ -18,8 +20,90 @@ body {
 }
 
 .profile-img {
-    height: 500px;
-    width: 500px;
-    border-radius: 50%;
-    border: solid purple 3px;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  border: solid purple 3px;
+}
+
+/* Menu animation
+
+ Bottom line
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 2.2rem;
+}
+ul:before {
+  content: "";
+  position: absolute;
+  position-anchor: --li;
+  bottom: anchor(bottom);
+  left: anchor(left);
+  right: anchor(right);
+  height: 0.1em;
+  background: #500073;
+  transition: 0.2s;
+}
+ul li:is(:hover, .active) {
+  anchor-name: --li;
+}
+ul:has(li:hover) li.active:not(:hover) {
+  anchor-name: none;
+}
+
+ul li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 900;
+  line-height: 1.5;
+  padding-inline: 0.2em;
+  display: block;
+} 
+  
+Square underlining*/
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 2.2rem;
+}
+ul:before {
+  content: "";
+  position: absolute;
+  position-anchor: --li;
+  inset: auto anchor(right) anchor(bottom) anchor(left);
+  background: lightblue;
+  height: 0.2em;
+  transition: 0.2s 0.2s;
+}
+ul li {
+  background: conic-gradient(lightblue 0 0) bottom/100% 0% no-repeat;
+  transition: 0.2s;
+}
+ul li:is(:hover, .active) {
+  anchor-name: --li;
+  background-size: 100% 100%;
+  transition: 0.2s 0.4s;
+}
+ul:has(li:hover) li.active:not(:hover) {
+  anchor-name: none;
+  background-size: 100% 0%;
+  transition: 0.2s;
+}
+
+ul li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 900;
+  line-height: 0.75;
+  padding-inline: 0.2em;
+  display: block;
 }
