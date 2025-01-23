@@ -20,8 +20,8 @@ body {
 }
 
 .profile-img {
-  height: 500px;
-  width: 500px;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
   border: solid purple 3px;
 }
@@ -29,7 +29,6 @@ body {
 .hero-container {
   background-image: url(../images/Fondo.jpg);
 }
-
 
 /* Menu animation
 
