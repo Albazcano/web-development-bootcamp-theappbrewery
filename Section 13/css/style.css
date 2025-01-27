@@ -10,13 +10,13 @@
 }
 
 body {
-  background-color: #cdc1ff;
+  /* background-color: #cdc1ff; */
+  background-color: #000;
   font-family: "Roboto", "Roboto-flex", sans-serif;
   font-size: var(--fs-body-large);
   line-height: 1.5;
   font-weight: 500;
   text-align: center;
-  -webkit-font-smoothing: antialiased;
 }
 
 .container-header {
@@ -25,11 +25,11 @@ body {
   max-height: fit-content;
   margin-inline: auto;
   width: 100%;
-  padding: 1rem;
+  padding: 0.15rem;
 }
 
 .navbar {
-  background-color: #b771e5;
+  background-color: #141414;
   content: "";
   position: relative;
   border-radius: 100vw;
@@ -56,47 +56,38 @@ ul {
   list-style: none;
   display: flex;
   gap: 0.5rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
-
 ul:before {
   content: "";
   position: absolute;
   position-anchor: --li;
-  inset: auto anchor(right) anchor(bottom) anchor(left);
-  background: #2a004e;
+  bottom: anchor(bottom);
+  left: anchor(left);
+  right: anchor(right);
   height: 0.2em;
-  transition: 0.2s 0.2s;
-}
-
-ul li {
-  background: conic-gradient(#2a004e 0 0) bottom/100% 0% no-repeat;
+  background: #cdc1ff;
   transition: 0.2s;
 }
-
 ul li:is(:hover, .active) {
   anchor-name: --li;
-  background-size: 100% 100%;
-  transition: 0.2s 0.4s;
 }
-
 ul:has(li:hover) li.active:not(:hover) {
   anchor-name: none;
-  background-size: 100% 0%;
-  transition: 0.2s;
 }
 
 ul li a {
   color: #000;
   text-decoration: none;
   font-weight: 900;
-  line-height: 0.75;
+  line-height: 1.5;
   padding-inline: 0.2em;
   display: block;
 }
 
+
 /* Dark mode */
-#theme-toggle {
+/* #theme-toggle {
   cursor: pointer;
   background: 0;
   border: 0;
@@ -115,3 +106,4 @@ ul li a {
 .toggle-circle {
   transform: translateX(-15%);
 }
+ */
